@@ -16,16 +16,28 @@ An Electron app to generate QR codes from user-inputted URLs.
 
 ### Clone the Repository
 
+```bash
+
 git clone https://github.com/arad55500/qr-code-generator.git
 cd qr-code-generator
 
+```
+
 ### Install Dependencies
+
+```bash
 
 npm install
 
+```
+
 ### Run the App
 
+```bash
+
 npm start
+
+```
 
 ## Usage
 

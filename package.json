@@ -1,0 +1,20 @@
+{
+  "name": "aos-qr-from-url-generator",
+  "version": "1.0.0",
+  "description": "ARAD OKANIN'S QR CODE GEENRATOR, CREATED WITH NODE.JS AND ELECTRON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "ARAD OKANIN",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.2.11",
+    "qr-image": "^3.2.0"
+  },
+  "devDependencies": {
+    "electron": "^26.2.4"
+  }
+}

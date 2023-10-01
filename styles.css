@@ -1,0 +1,44 @@
+html {
+    background-color:rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    align-items: center;
+    display:grid;
+}
+
+h1 {
+    font-size: 42px;
+    font-family: 'Gabarito', cursive;
+}
+
+h2 {
+    font-size: 12px;
+    font-family: 'Gabarito', cursive;
+    margin-top: 5px;
+}
+
+#url-entry {
+    font-size: 14px;
+    font-family: 'Gabarito', cursive;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px;
+}
+
+.white-button:hover {
+    background-color: #f7f7f7; /* Slightly gray on hover */
+    margin:20px;
+}
+
+#credits {
+    font-size: 15px;
+}

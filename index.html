@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <title>OFFLINE QR CODE GENERATOR</title>
+</head>
+<body>
+
+    <!-- HEADER-->
+    <div id="header">
+        <h1>OFFLINE QR CODE GENERATOR</h1>
+        <h2>IMAGE IN PNG FORMAT WILL BE GENERATED UNDER QR-IMG.PNG IN THE AOS QR GENERATOR FOLDER.</h2>
+    </div>
+
+    <!-- URL ENTRY-->
+    <div id="url-entry">
+        <label for="textField">Enter URL: </label>
+        <input type="text" id="textField" name="textField" placeholder="Type here...">
+    </div>
+
+    <!-- SUBMIT BUTTON -->
+    <div id="submitButton">
+        <button class="white-button" type="submit" name="submit">Submit</button>
+    </div>
+
+    <!--CREDITS-->
+    <div id="credits">
+        <p>Made by Arad Okanin | aradokanin.com</p>
+    </div>
+
+    <script>
+        const { ipcRenderer } = require('electron');
+    
+        document.querySelector('button[name="submit"]').addEventListener('click', () => {
+            const url = document.querySelector('input[name="textField"]').value;
+            ipcRenderer.send('generateQR', url);
+        });
+    
+        ipcRenderer.on('result', (event, message) => {
+            alert(message);
+        });
+    </script>
+    
+    
+
+</body>
+</html>

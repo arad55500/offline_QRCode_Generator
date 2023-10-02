@@ -35,7 +35,7 @@ npm install
 
 ```bash
 
-npm start
+npm main.js
 
 ```
 

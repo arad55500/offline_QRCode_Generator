@@ -20,7 +20,10 @@ function createMainWindow() {
         }
     });
 
+
     mainWindow.loadFile('index.html');
+    mainWindow.setMenuBarVisibility(false);
+
 
     ipcMain.on('generateQR', (event, url) => {
         generateQR(url, (err) => {

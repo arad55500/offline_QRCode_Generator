@@ -35,7 +35,7 @@ npm install
 
 ```bash
 
-npm main.js
+node main.js
 
 ```
 
@@ -64,5 +64,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 **Arad Okanin**
 
-- Website: [aradokanin.com](https://aradokanin.com)
+- Website: [aradokanin.com](https://www.aradokanin.com)
 - GitHub: [@arad55500](https://github.com/arad55500)

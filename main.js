@@ -12,7 +12,7 @@ function createMainWindow() {
         width: 700,
         height: 400,
         title: "LOADING..",
-        icon: "./icon-image.png",
+        icon: "./icon/icon-image.png",
         resizable: false,
         webPreferences: {
             nodeIntegration: true,
@@ -20,10 +20,8 @@ function createMainWindow() {
         }
     });
 
-
     mainWindow.loadFile('index.html');
     mainWindow.setMenuBarVisibility(false);
-
 
     ipcMain.on('generateQR', (event, url) => {
         generateQR(url, (err) => {
@@ -84,12 +82,13 @@ app.on('window-all-closed', () => {
     }
 });
 
+// Commenting out this redundant event listener, as the same event is already handled above.
+// app.on('window-all-closed', () => {
+//     app.quit();
+// });
+
 app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
         createMainWindow();
     }
-});
-
-app.on('window-all-closed', () => {
-    app.quit();
 });

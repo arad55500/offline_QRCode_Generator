@@ -35,7 +35,7 @@ npm install
 
 ```bash
 
-node main.js
+electron main.js
 
 ```
 

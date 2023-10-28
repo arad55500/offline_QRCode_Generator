@@ -14,7 +14,7 @@ An Electron app to generate QR codes from user-inputted URLs.
 ```bash
 
 git clone https://github.com/arad55500/offline_QRCode_Generator.git
-cd qr-code-generator
+cd offline_QRCode_Generator
 ./launch.sh
 
 ```
@@ -30,7 +30,7 @@ cd qr-code-generator
 ```bash
 
 git clone https://github.com/arad55500/offline_QRCode_Generator.git
-cd qr-code-generator
+cd offline_QRCode_Generator
 
 ```
 

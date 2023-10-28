@@ -11,6 +11,9 @@ An Electron app to generate QR codes from user-inputted URLs.
 ## Installation and Setup
 
 ### Install & Run with one ommand
+
+Run the following command in your terminal:
+
 ```bash
 
 git clone https://github.com/arad55500/offline_QRCode_Generator.git
@@ -18,6 +21,12 @@ cd offline_QRCode_Generator
 ./launch.sh
 
 ```
+
+Once the application has installed, you can use the following command to run it:
+
+   ```bash
+   ./launch.sh
+   ```
 
 ### Run in Development Mode
 

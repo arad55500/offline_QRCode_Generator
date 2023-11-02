@@ -86,3 +86,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 - Website: [aradokanin.com](https://www.aradokanin.com)
 - GitHub: [@arad55500](https://github.com/arad55500)
+
+## Screenshot
+![Screenshot](/screenshots/screenshot.jpg "screenshot")
